@@ -1,0 +1,5 @@
+[user]
+  name = tgoto63
+  email = tgoto63@gmail.com
+[core]
+  excludesfile = ~/Workspace/github.com/tgoto63/dotfiles/git/.gitignore_global

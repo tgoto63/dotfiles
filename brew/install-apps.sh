@@ -27,6 +27,7 @@ brew cask install sketch
 brew cask install skype
 brew cask install slack
 brew cask install spectacle
+brew cask install visual-studio-code
 brew cask install webstorm
 
 brew cleanup

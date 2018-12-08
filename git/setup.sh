@@ -1,0 +1,1 @@
+ln -fs ~/Workspace/github.com/tgoto63/dotfiles/git/.gitconfig ~/.gitconfig
