@@ -13,8 +13,10 @@ brew "tmux"
 brew "vim"
 brew "wget"
 brew "zsh"
+brew "zsh-syntax-highlighting"
 cask "alfred"
 cask "appcleaner"
+cask "authy"
 cask "bartender"
 cask "google-backup-and-sync"
 cask "google-chrome"
@@ -27,9 +29,11 @@ cask "sketch"
 cask "skype"
 cask "slack"
 cask "spectacle"
+cask "tunnelblick"
 cask "visual-studio-code"
 cask "webstorm"
 mas "Display Menu", id: 549083868
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Skitch", id: 425955336
+mas "Xcode", id: 497799835
