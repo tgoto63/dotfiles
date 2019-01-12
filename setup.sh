@@ -1,5 +1,5 @@
-# install HomeBrew and awesome apps
-sh brew/index.sh
+# install Homebrew and awesome apps
+sh brew/setup.sh
 
 # Git
 sh git/setup.sh
