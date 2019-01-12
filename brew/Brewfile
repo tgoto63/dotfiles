@@ -4,7 +4,8 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 brew "brotli"
 brew "direnv"
-brew "ffmpeg"
+brew "opus"
+brew "ffmpeg", args: ["with-fdk-aac", "with-fontconfig", "with-freetype", "with-libass"]
 brew "git"
 brew "jq"
 brew "mas"
@@ -31,6 +32,7 @@ cask "slack"
 cask "spectacle"
 cask "tunnelblick"
 cask "visual-studio-code"
+cask "vlc"
 cask "webstorm"
 mas "Display Menu", id: 549083868
 mas "Keynote", id: 409183694
