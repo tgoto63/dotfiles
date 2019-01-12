@@ -9,3 +9,6 @@ sh zsh/setup.sh
 
 # Node.js
 sh node/setup.sh
+
+# Python3
+sh python/setup.sh
