@@ -1,3 +1,6 @@
+# setup MacOS
+sudo sh macos/setup.sh
+
 # install Homebrew and awesome apps
 sh brew/setup.sh
 
