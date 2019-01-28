@@ -1,4 +1,8 @@
-# install nvm
+# fix zlib error.
+# ref: https://qiita.com/zreactor/items/c3fd04417e0d61af0afe
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+
+# install pyenv
 git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 
 # install Node.js
