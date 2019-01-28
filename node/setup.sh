@@ -11,4 +11,12 @@ nvm alias default 'lts/*'
 npm i -g npm@latest
 
 # install libraries
-npm i -g yarn
+npm i -g yarn \
+         typescript \
+         serverless \
+         @angular/cli \
+         create-react-app \
+         http-server \
+         npm-check-updates \
+         lighthouse
+npm ls -g --depth=0
