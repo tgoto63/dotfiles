@@ -5,6 +5,12 @@ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_heade
 # install pyenv
 git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 
-# install Node.js
+# install Python 3
 pyenv install 3.7.2
 pyenv global 3.7.2
+
+# update pip
+pip install --upgrade pip
+
+# install libraries
+pip install awscli
