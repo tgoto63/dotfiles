@@ -6,7 +6,9 @@ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_heade
 git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 
 # install Python 3
-pyenv install 3.7.2
+# fix "ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?" for Mac OS Mojave
+# ref' https://github.com/pyenv/pyenv/issues/1184#issuecomment-409320318
+CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl)" pyenv install 3.7.2
 pyenv global 3.7.2
 
 # update pip
