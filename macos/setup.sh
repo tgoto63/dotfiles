@@ -98,11 +98,17 @@ chflags nohidden ~/Library
 sudo chflags nohidden /Volumes
 
 ##################################################
+## LaunchServices
+##################################################
+# disable confirmation dialog when opening new apps
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+##################################################
 # Trackpad
 ##################################################
 # enable tap to click for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults write com.apple.driver.AppleMultitouch.trackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+defaults write com.apple.driver.AppleMultitouch.trackpad Clicking -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
@@ -154,3 +160,8 @@ defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 # 既定で印刷ダイアログを展開する
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
+
+##################################################
+# iTerm2
+##################################################
+/usr/libexec/PlistBuddy -c "Set 'New Bookmarks':0:'Normal Font' SourceCodeProForPowerline-Regular 12" ~/Library/Preferences/com.googlecode.iTerm2.plist
